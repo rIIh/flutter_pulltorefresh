@@ -316,6 +316,7 @@ class SmartRefresherState extends State<SmartRefresher> {
     } else if (child is! Scrollable) {
       slivers = [
         SliverRefreshBody(
+          key: Key('refresh-content'),
           child: child ?? Container(),
         )
       ];
